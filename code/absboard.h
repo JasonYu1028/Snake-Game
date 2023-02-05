@@ -1,12 +1,12 @@
 // Abstract Subject
-#ifndef ABSPLAYER_H
-#define ABSPLAYER_H
+#ifndef ABSBOARD_H
+#define ABSBOARD_H
 #include <vector>
 #include <memory>
 
 class ABSDisplay;
 
-class ABSPlayer {
+class ABSBoard {
 
   std::vector<std::shared_ptr<ABSDisplay>> displays;
 
@@ -16,7 +16,7 @@ public:
   void notifyBoard();
   void attach(std::shared_ptr<ABSDisplay> o);
   void detach(std::shared_ptr<ABSDisplay> o);
-  virtual ~ABSPlayer() = default;
+  virtual ~ABSBoard() = default;
 };
 
 

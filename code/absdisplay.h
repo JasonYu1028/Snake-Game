@@ -1,9 +1,9 @@
 // Abstract Observer Class
 #ifndef ABSDISPLAY_H
 #define ABSDISPLAY_H
-#include "absplayer.h"
+#include "absboard.h"
 
-class ABSPlayer;
+class ABSBoard;
 
 class ABSDisplay {
 
